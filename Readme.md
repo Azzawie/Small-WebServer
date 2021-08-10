@@ -1,4 +1,4 @@
-## Project idea
+## Project objectives
 
 A small webserver that takes localhost requests on a pre-defined port, predefined location, and server the requested file back to the client(user).
 If the file does not exist, it will return status code 404, and the page can not be found.
@@ -34,7 +34,7 @@ If the file does not exist, it will return status code 404, and the page can not
 
 
 
-## List of methods
+## Methods list
 
 * ***Server methods...***
 
