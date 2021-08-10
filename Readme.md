@@ -4,6 +4,7 @@ A small webserver that takes localhost requests on a pre-defined port, predefine
 If the file does not exist, it will return status code 404, and the page can not be found.
 
 
+
 ## To run the server
 
 1. Edit the "Configuration.json" file located in the project folder to include the server location also the port to which the server should listen.
@@ -24,8 +25,9 @@ If the file does not exist, it will return status code 404, and the page can not
 
 ## Notes
 
-- Lambda expression: located in the "server.java" file inside the main method while creating a new thread.
-- Inner class: located in "client.java" file and named as "NotFound".
+- Lambda expression: located in the `server.java` file inside the main method while creating a new thread.
+- Thread: located in the `server.java` file inside the main method.
+- Inner class: located in `client.java` file and named as `NotFound`.
 - Used the `org.json.simple` library to retrieve the server configurations from the configuration file.
 - Used the `hash table` for the server configuration.
 - Used `java.awt.*` library for displaying the file if we find it.
@@ -53,7 +55,6 @@ If the file does not exist, it will return status code 404, and the page can not
 
     6. `private static void getRequest(Socket conn)`
        Takes a socket, checks if the call is a GET request, and gets the requested page name.
-       
 
 * ***Client methods…***
 
